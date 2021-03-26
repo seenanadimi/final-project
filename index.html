@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>gallery</title>
   </head>
   <body>
     <nav>
@@ -19,18 +19,24 @@
           >Close</a
         >
         <div class="overlay-content">
-          <a href="about.html">About</a>
-          <a href="index2.html">Services</a>
-          <a href="contact.html">Clients</a>
+          <a class="content-wrapper" href="index.html">Work</a>
+          <a id="content-wrapper-border" href="about.html">Services</a>
+          <a class="content-wrapper" href="contact.html">Contact</a>
+
+          <a id="nav-logo-id" href="index.html">Seena Nadimi Corp</a>
         </div>
       </div>
-      <div class="logo">
-        <!-- <img src="#" alt=""> -->
-        <span>LOGO</span>
+      <div class="sidenav">
+        <a id="nav2" href="index.html">Gallery</a>
+        <a id="nav3" href="">/ Index</a>
       </div>
-
       <span onclick="openNav()">Menu</span>
     </nav>
+
+    <div class="foot-logo">
+      <a id="foot-logo-id" href="index.html">Seena Nadimi Corp</a>
+    </div>
+
     <script>
       function openNav() {
         document.getElementById("myNav").style.height = "100%";
