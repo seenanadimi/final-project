@@ -13,32 +13,22 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >Close</a
-        >
-        <div class="overlay-content">
-          <a href="about.html">About</a>
-          <a href="index2.html">Services</a>
-          <a href="contact.html">Clients</a>
-        </div>
+    <header class="header-nav-wrap">
+      <nav class="header-nav-right">
+        <a id="nav-right-1" href="index.html">Home</a>
+        <a id="nav-right-2" href="about.html">About</a>
+        <a id="nav-right-3" href="contact.html">Contact</a>
+      </nav>
+      <nav class="header-nav-left">
+        <a id="nav-left-1" href="">Gallery</a>
+        <a style="color: grey">/</a>
+        <a id="nav-left-2" style="color: grey" href="">Index</a>
+      </nav>
+    </header>
+    <main class="main-wrap">
+      <div class="img-wrap">
+        <img id="main-img" src="./img/474047.jpg" alt="" />
       </div>
-      <div class="logo">
-        <!-- <img src="#" alt=""> -->
-        <span>LOGO</span>
-      </div>
-
-      <span onclick="openNav()">Menu</span>
-    </nav>
-    <script>
-      function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-      }
-    </script>
+    </main>
   </body>
 </html>
