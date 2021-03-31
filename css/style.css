@@ -1,7 +1,7 @@
 * {
   font-family: "Lato", sans-serif;
 }
-
+/* HEADER/NAV */
 .header-nav-wrap {
   height: 75px;
   border-bottom: black 1px solid;
@@ -55,44 +55,43 @@ a {
   text-decoration: line-through;
 }
 
+.bottom-link {
+  width: 80px;
+  bottom: 20px;
+  position: fixed;
+}
+
+/* HOME PAGE */
 .main-wrap {
-  height: 850px;
+  height: 770px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 150px;
   /* border: 1px black solid; */
 }
 
 .main-img-wrap {
   width: 50%;
-  height: 850px;
+  height: 770px;
   /* border: 1px solid black; */
-  overflow: hidden;
-  padding-left: 25%;
+  overflow: fill;
+
+  margin-left: 25%;
 }
 
 #main-img {
   width: 100%;
-  padding-top: 100px;
+
   display: block;
   position: relative;
   z-index: 0;
 }
 
-.bottom-link {
-  width: 100px;
-  bottom: 20px;
-  font-style: bold;
-  position: fixed;
-}
-
-/* CONTACT SHEET ONLY */
+/* CONTACT PAGE */
 
 .contact-main {
-  margin-bottom: 100px;
-  margin-top: 100px;
-  margin-right: 350px;
+  margin: 100px 20px 100px 20px;
   height: 700px;
-  padding-left: 20px;
 }
 
 .input,
@@ -118,7 +117,6 @@ textarea {
 
 /* When moving the mouse over the submit button, add a darker green color */
 .button:hover {
-  background-color: #a84c00dc;
   background-color: #ff5e00e5;
 }
 
@@ -131,51 +129,70 @@ textarea {
   width: 50%;
 }
 
-/* index2 .index2-wrap */
+/* ABOUT/INDEX2 */
+
 .index2-wrap {
-  height: 900px;
+  height: 6850px;
+  margin-top: 100px;
   margin-right: 20px;
   margin-left: 20px;
 }
+
 /* index2 grid */
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  background-color: #2196f3;
+  /* background-color: #2196f3; */
   padding: 20px;
 }
+
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); */
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
-.gridimg {
-  width: 100%;
+.grid-img {
+  height: 600px;
 }
+
 /* FOOTER */
 
-.footwrap {
+.foot-wrap {
   width: 100%;
   height: 300px;
   background-color: rgba(219, 72, 30, 0.99);
   clear: both;
   padding-top: 200px;
 }
-.iconwrap{
+
+.icon-wrap {
   text-align: center;
-  margin-right: 500px;
-  margin-left: 500px;
-  
-  
 }
+
 .icons {
   font-size: 75px;
   padding: 10px;
-  
 }
-.icons:hover{
+
+.icons:hover {
+  color: white;
+}
+
+.footer-link-wrap {
+  padding-top: 20px;
+  border-top: 1px black solid;
+  margin-right: 800px;
+  margin-left: 800px;
+}
+.foot-link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.foot-link:hover {
+  text-decoration: line-through;
   color: white;
 }
