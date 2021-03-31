@@ -63,7 +63,7 @@ a {
 
 /* HOME PAGE */
 .main-wrap {
-  height: 770px;
+  height: 550px;
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 150px;
@@ -72,7 +72,7 @@ a {
 
 .main-img-wrap {
   width: 50%;
-  height: 770px;
+  height: 550px;
   /* border: 1px solid black; */
   overflow: fill;
 
@@ -132,33 +132,37 @@ textarea {
 /* ABOUT/INDEX2 */
 
 .index2-wrap {
-  height: 6850px;
+  height: 3300px;
   margin-top: 100px;
   margin-right: 20px;
   margin-left: 20px;
 }
 
-/* index2 grid */
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  /* background-color: #2196f3; */
-  padding: 20px;
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  column-count:         2;
+  padding-right: 110px;
+  padding-left: 110px;
 }
 
-.grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8); */
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 100px;
+#photos img{
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  padding-bottom: 15px;
 }
 
-.grid-img {
-  height: 600px;
+#photos .video {
+  width: 100%;
+  padding-bottom: 15px;
 }
 
+#photos .map {
+  width: 100%;
+  
+}
 /* FOOTER */
 
 .foot-wrap {
@@ -185,8 +189,8 @@ textarea {
 .footer-link-wrap {
   padding-top: 20px;
   border-top: 1px black solid;
-  margin-right: 800px;
-  margin-left: 800px;
+  margin-right: 550px;
+  margin-left: 550px;
 }
 .foot-link {
   padding-left: 10px;
@@ -196,3 +200,7 @@ textarea {
   text-decoration: line-through;
   color: white;
 }
+
+
+
+
